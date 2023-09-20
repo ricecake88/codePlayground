@@ -1,0 +1,30 @@
+{
+  "tests": "jest",
+  "dependencies": {
+    "jest": "^29.7.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2",
+    "yarn": "^1.22.19"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.5",
+    "ts-jest": "^29.1.1"
+  },
+  "name": "codeplayground",
+  "version": "1.0.0",
+  "main": "jest.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ricecake88/codePlayground.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ricecake88/codePlayground/issues"
+  },
+  "homepage": "https://github.com/ricecake88/codePlayground#readme",
+  "description": ""
+}
