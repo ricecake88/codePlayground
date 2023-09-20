@@ -5,25 +5,21 @@ function getMidIdx(minIdx: number, maxIdx: number) {
 }
 export function binarySearch<T>(input: Array<T>, searchItem: T, minIdx: number = 0, maxIdx: number = input.length - 1): number | null {
 
-    let guessIdx = getMidIdx(minIdx, maxIdx);
+    let guessIdx: number = 0;
 
-    while (input[guessIdx] !== searchItem) {
-
+    while (minIdx <= maxIdx) {
+        guessIdx = getMidIdx(minIdx, maxIdx);
+        if (searchItem === input[guessIdx]) {
+            return guessIdx;            
+        }
         if (searchItem > input[guessIdx]) {
             minIdx = guessIdx + 1;
         }
         if (searchItem < input[guessIdx]) {
             maxIdx = guessIdx - 1;
         }
-
-        guessIdx = getMidIdx(minIdx, maxIdx);
-
-        if (maxIdx < minIdx) {
-            return null
-        }
     }
-
-    return guessIdx;
+    return null;
 }
 
 interface BinarySearch<T> {
